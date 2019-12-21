@@ -1,43 +1,83 @@
 .footer {
-    background-color: $color-secondary;
-    grid-column: full-start / full-end;
-    padding: 8rem;
+  background-color: $color-secondary;
+  grid-column: full-start / full-end;
+  padding: 8rem;
 }
 
 .nav {
-    list-style: none;
+  list-style: none;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-gap: 2rem;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+  justify-items: center;
 
-    &__link:link,
-    &__link:visited {
-        font-size: 1.4rem;
-        color: #fff;
-        text-decoration: none;
-        font-family: $font-display;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 1.5rem;
-        display: block;
-        transition: all .2s;
-    }
+  &__link:link,
+  &__link:visited {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: $font-display;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all 0.2s;
+  }
 
-    &__link:hover,
-    &__link:active {
-        background-color: rgba(#fff, .05);
-        transform: translateY(-3px);
-    }
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, 0.05);
+    transform: translateY(-3px);
+  }
 }
 
 .copyright {
-    font-size: 1.4rem;
-    color: $color-grey-light-2;
-    margin-top: 6rem;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    width: 70%;
+  font-size: 1.65rem;
+  color: $color-grey-light-2;
+  margin-top: 6rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 70%;
+  font-weight: bold;
+}
+
+/*  Footer links */
+ul li a {
+  color: #c0bd94;
+  /* Multicoloured Hover Variations */
+  i {
+    &#facebook:hover {
+      color: #3b5998;
+    }
+    &#twitter:hover {
+      color: #f5f8fa;
+    }
+    &#youtube:hover {
+      color: #d34836;
+    }
+    &#linkedin:hover {
+      color: #0077b5;
+    }
+    &#instagram:hover {
+      color: #fc97fc;
+    }
+  }
+}
+
+a#dzenis {
+  display: inline-block;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 900;
+  transition: transform 0.3s;
+  text-decoration: none;
+  letter-spacing: 2px;
+
+  &:hover {
+    transform: scale(1.1);
+    margin-left: 0.5rem;
+  }
 }
